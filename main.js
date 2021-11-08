@@ -1,11 +1,20 @@
-const clicca = document.querySelector('.fas.fa-bars');
+const iconaMenu = document.querySelector('.fas.fa-bars');
+const hambMenu = document.querySelector('.hamburger-menu');
 
-clicca.addEventListener('click', function(){
-    document.querySelector('.hamburger-menu').classList.add('active'); 
+
+iconaMenu.addEventListener('click', function(){
+    hambMenu.classList.add('active'); 
 });
 
-const remove = document.querySelector('.fas.fa-times');
+const croce = document.querySelector('.fas.fa-times');
 
-remove.addEventListener('click', function(){
-    document.querySelector('.hamburger-menu').classList.remove('active');
+croce.addEventListener('click', function(){ 
+    hambMenu.classList.remove('active');
 });
+
+// document.querySelector('.fas.fa-bars').addEventListener('click', function(){
+//     document.querySelector('.hamburger-menu').classList.add('active');
+// });
+// document.querySelector('.fas.fa-times').addEventListener('click', function(){
+//     document.querySelector('.hamburger-menu').classList.remove('active');
+// });
